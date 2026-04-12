@@ -216,6 +216,10 @@ void buscarElemento()
 
 	cout << "Digite o elemento a ser buscado: ";
 	cin >> numero;
+	if(primeiro == NULL){
+	cout << "Nao sobrou nada";
+	return;
+	}
 	while (aux != NULL) {
 		if (aux->valor == numero) {
 			cout << "Elemento encontrado \n";
